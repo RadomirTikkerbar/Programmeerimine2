@@ -1,0 +1,54 @@
+﻿@page "/create"
+@page "/edit/{Id:int}"
+
+@inject IApiClient apiClient
+@inject NavigationManager NavManager
+
+<h3>@title</h3>
+
+<EditForm Model="@order" OnSubmit=@FormSubmitted>
+    <div class="form-group row">
+        <label for="title" class="col-sm-2 col-form-label">
+            Title
+        </label>
+        <div class="col-sm-10">
+            <InputText id="title" class="form-control" placeholder="Title" @bind-Value="order.Title" />
+        </div>
+    </div>
+    <div class="form-group row" style="margin-top:20px">
+        <label for="title" class="col-sm-2 col-form-label">
+        </label>
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+
+    [Parameter]
+    public int Id { get; set; }
+
+    private Order order = new Order();
+    private string title = "Edit";
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Id == 0)
+        {
+            title = "Create new";
+            return;
+        }
+
+        var result = await apiClient.Get(Id);
+
+        order = result.Value;
+    }
+
+    private async Task FormSubmitted()
+    {
+        await apiClient.Save(order);
+
+        NavManager.NavigateTo("/");
+    }
+}
