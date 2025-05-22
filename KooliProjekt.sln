@@ -3,7 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KooliProjekt", "KooliProjekt\KooliProjekt.csproj", "{B6064AB2-66AC-4896-9DFE-E8C97404F6E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KooliProjekt", "KooliProjekt\KooliProjekt.csproj", "{B6064AB2-66AC-4896-9DFE-E8C97404F6E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KooliProjekt.UnitTests", "KooliProjekt.UnitTests\KooliProjekt.UnitTests.csproj", "{ED6F020F-8927-48D7-BD68-507329DF484F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KooliProjekt.IntegrationTests", "KooliProjekt.IntegrationTests\KooliProjekt.IntegrationTests.csproj", "{6EDFB8B6-4142-4569-99F0-C5BE87F077FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{CB69E888-4030-4073-8CB3-2F79FC20DD29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AEC9E8ED-9A6B-4ED7-B57D-290690A211A8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1.UnitTests", "WpfApp1.UnitTests\WpfApp1.UnitTests.csproj", "{5B8E7665-4B32-4497-AFEA-24B7B67C0EC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KooliProjekt.WinFormsApp", "KooliProjekt.WinFormsApp\KooliProjekt.WinFormsApp.csproj", "{221E6142-DE5C-4F75-B8FD-2A4C5441EC4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KooliProjekt.WpfApp", "KooliProjekt.WpfApp\KooliProjekt.WpfApp.csproj", "{3592AD59-1EC9-4A1F-B755-B2AE11566E2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KooliProjekt.WinFormsApp.UnitTests", "KooliProjekt.WinFormsApp.UnitTests\KooliProjekt.WinFormsApp.UnitTests.csproj", "{1FFED439-4322-43C3-B691-788E30C76ABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KooliProjekt.BlazorApp", "KooliProjekt.Blazor\KooliProjekt.BlazorApp.csproj", "{28E9DDA7-48C3-4D92-A58B-C7D7FF144861}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +36,44 @@ Global
 		{B6064AB2-66AC-4896-9DFE-E8C97404F6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6064AB2-66AC-4896-9DFE-E8C97404F6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6064AB2-66AC-4896-9DFE-E8C97404F6E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED6F020F-8927-48D7-BD68-507329DF484F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED6F020F-8927-48D7-BD68-507329DF484F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED6F020F-8927-48D7-BD68-507329DF484F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED6F020F-8927-48D7-BD68-507329DF484F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EDFB8B6-4142-4569-99F0-C5BE87F077FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDFB8B6-4142-4569-99F0-C5BE87F077FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDFB8B6-4142-4569-99F0-C5BE87F077FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDFB8B6-4142-4569-99F0-C5BE87F077FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB69E888-4030-4073-8CB3-2F79FC20DD29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB69E888-4030-4073-8CB3-2F79FC20DD29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB69E888-4030-4073-8CB3-2F79FC20DD29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB69E888-4030-4073-8CB3-2F79FC20DD29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B8E7665-4B32-4497-AFEA-24B7B67C0EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8E7665-4B32-4497-AFEA-24B7B67C0EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8E7665-4B32-4497-AFEA-24B7B67C0EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8E7665-4B32-4497-AFEA-24B7B67C0EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{221E6142-DE5C-4F75-B8FD-2A4C5441EC4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{221E6142-DE5C-4F75-B8FD-2A4C5441EC4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{221E6142-DE5C-4F75-B8FD-2A4C5441EC4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{221E6142-DE5C-4F75-B8FD-2A4C5441EC4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3592AD59-1EC9-4A1F-B755-B2AE11566E2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3592AD59-1EC9-4A1F-B755-B2AE11566E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3592AD59-1EC9-4A1F-B755-B2AE11566E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3592AD59-1EC9-4A1F-B755-B2AE11566E2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FFED439-4322-43C3-B691-788E30C76ABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FFED439-4322-43C3-B691-788E30C76ABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FFED439-4322-43C3-B691-788E30C76ABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FFED439-4322-43C3-B691-788E30C76ABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28E9DDA7-48C3-4D92-A58B-C7D7FF144861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E9DDA7-48C3-4D92-A58B-C7D7FF144861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E9DDA7-48C3-4D92-A58B-C7D7FF144861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E9DDA7-48C3-4D92-A58B-C7D7FF144861}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{28E9DDA7-48C3-4D92-A58B-C7D7FF144861} = {AEC9E8ED-9A6B-4ED7-B57D-290690A211A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {792456E2-8406-497C-97E7-7999439674C1}
